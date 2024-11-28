@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" href="C:\Users\noalf\Desktop\HTML\fotos\logoIcono.ico" type="image/x-icon">
+
+    <title>Contacto</title>
+
+    <!--- Estilo general-->
+    <link rel="stylesheet" href="C:\Users\noalf\Desktop\HTML\estilosGenerales.css" />
+
+    <!-- Estilos de formulario -->
+    <style>
+        fieldset {
+            margin-top: 5%;
+            clear: both;
+            border: none;
+        }
+
+        legend {
+            text-align: center;
+            clear: both;
+        }
+
+        .input {
+            margin-top: 2%;
+            text-align: center;
+            width: 20%;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        table {
+            margin-left: 4%;
+
+        }
+
+        td {
+            align-items: center;
+            padding-bottom: 1%;
+
+        }
+
+        input,
+        option,
+        label {
+            float: left;
+            padding-right: 35px;
+            margin-left: 20px;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+
+    <!--FLEXBOX -->
+    <style>
+        .flex-conainer {
+            display: flex;
+            /* Recoge dirreccion y wrap */
+            flex-flow: column wrap;
+            width: 100%;
+            max-width: 1200px;
+            background: radial-gradient(#EDEDED, #bdd2f7);
+            justify-content: flex-start;
+            /* Auto para que aparezcan las barras solo cuando sea necesario */
+            overflow: auto;
+            align-items: center;
+            margin: auto;
+            /* Centra el contenedor */
+            justify-content: flex-start;
+            /* Espaciado uniforme entre cajas */
+            align-items: center;
+            /* Centra las cajas horizontalmente */
+            padding: 20px;
+            gap: 20px;
+            box-shadow: 2px 2px 4px #ffffff;
+        }
+
+        .cajas {
+            flex-grow: 1;
+            width: 100%;
+            max-width: 1000px;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            overflow: auto;
+            border: none;
+            min-height: px;
+            margin: 10px;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<!-- C:\Users\noalf\Desktop\HTML\fechas.php -->
+
+<body>
+    <header>
+        <nav class="navSuperior">
+            <a href="C:\Users\noalf\Desktop\HTML\ÍNDICE.html" tabindex="19">
+                <img class="imgPagInicio" src="C:\Users\noalf\Desktop\HTML\fotos\logoIcono.ico" alt="Página principal">
+            </a>
+
+            <a href="C:\Users\noalf\Desktop\HTML\MENÚ.html" tabindex="20">Menú</a>
+        </nav>
+
+
+        <h1> RESERVAS</h1>
+    </header>
+
+    <section class="flex-conainer">
+        <!-- INFROMACIÓN DE RESERVA -->
+        <form action="C:\Users\noalf\Desktop\HTML\datosFormulario.php" method="post">
+            <div class="cajas">
+                <fieldset>
+                    <!-- Nº personas -->
+                    <legend> INFORMACIÓN DE RESERVA </legend>
+                    <label for="personas"> PERSONAS </label>
+                    <select tabindex="1" id="personas" name="personas" required>
+                        <option value="1 persona"> 1 persona </option>
+                        <option value="2 personas"> 2 personas</option>
+                        <option value="3 personas"> 3 personas</option>
+                        <option value="4 personas"> 4 personas</option>
+                        <option value="5 personas"> 5 personas</option>
+
+                    </select> <br>
+
+                    <!-- Fechas y horas -->
+                    <label for="fecha"> FECHAS</label>
+                    <input tabindex="2" type="date" id="fecha" name="Fecha" required>
+                    <label for="hora"> HORA</label>
+                    <input tabindex="3" type="time" id="hora" name="hora" min="13:00" max="23:30" required> <br>
+            </div>
+            </fieldset>
+
+
+            <fieldset>
+                <div class="cajas">
+                    <!-- INFORMACIÓN PERSONAL -->
+                    <legend> INFORMACIÓN PERSONAL</legend>
+                    <label for="Nombre">NOMBRE</label>
+                    <input tabindex="4" type="text" id="name" name="Nombre" placeholder="Nombre" required> <br>
+
+                    <label for="Apellido">APELLIDOS</label>
+                    <input tabindex="5" type="text" id="apellidos" name="apellidos" placeholder="Apellido" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <div class="cajas">
+                    <!-- INFORMACIÓN CONTACTO -->
+                    <legend> INFORMACIÓN DE CONTACTO</legend>
+                    <label for="Correo electrónico"> Correo Electrónico </label>
+                    <input tabindex="6" type="email" id="Correo electrónico" name="correo electrónico"
+                        placeholder="correo@gmail.com" required> <br>
+
+                    <label for="Telefono"> TELEFONO</label>
+                    <input tabindex="7" type="tel" id="Telefono" name="Telefono" required>
+                </div>
+            </fieldset>
+
+            <!-- ALÉRGENOS -->
+            <fieldset>
+                <div class="cajas">
+                    <legend> ALÉRGENOS </legend>
+                    <table>
+                        <tr>
+                            <td> <input tabindex="8" type="checkbox" id="Soja" name="Soja">
+                                <label for="Soja"> Soja </label>
+                            </td>
+
+                            <td> <input tabindex="9" type="checkbox" id="Ultranueces" name="Ultranueces">
+                                <label for="Ultranueces"> UltraNueces </label>
+                            </td>
+
+                            <td> <input tabindex="10" type="checkbox" id="Sultfitos" name="Sulfitos">
+                                <label for="Sulfitos"> Sulfitos </label>
+                            </td>
+
+                            <td> <input tabindex="11" type="checkbox" id="Huevo" name="Huevo">
+                                <label for="Huevo"> Huevo </label>
+                            </td>
+
+                            <td> <input tabindex="12" type="checkbox" id="Sésamo" name="Sésamo">
+                                <label for="Sésamo"> Sésamo </label>
+                            </td>
+
+                            <td> <input tabindex="13" type="checkbox" id="Pescado" name="Pescado">
+                                <label for="Pescado"> Pescado </label>
+                            </td>
+
+                            <td> <input tabindex="14" type="checkbox" id="Mostaza" name="Mostaza">
+                                <label for="Mostaza"> Mostaza </label>
+                            </td>
+
+                            <td> <input tabindex="15" type="checkbox" id="lácteos" name="lácteos">
+                                <label for="lácteos"> lácteos </label>
+                            </td>
+
+                            <td> <input tabindex="16" type="checkbox" id="Glúten" name="Glúten">
+                                <label for="Glúten"> Glúten </label>
+                            </td>
+
+                            <td> <input tabindex="17" type="checkbox" id="Frutos secos" name="Frutos secos">
+                                <label for="Frutos secos"> Frutos secos </label>
+                            </td>
+
+                            <td> <input tabindex="18" type="checkbox" id="Cacahuetes" name="Cacahuetes">
+                                <label for="Cacahuetes"> Cacahuetes </label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </fieldset>
+
+            <!-- Botones -->
+            <section class="clear">
+                <div class="cajas">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                </div>
+
+            </section>
+        </form>
+    </section>
+
+    <footer> <b> UBICACIÓN Y CONTACTO </b> <br>
+        Calle cereales, 24, 28001, Madrid <br>
+        info@cieloenplatomadrid.com <br>
+        +34 91 563 07 73
+    </footer>
+
+</body>
+
+</html>

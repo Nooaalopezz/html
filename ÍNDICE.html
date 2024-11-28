@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Favicon -->
+    <link rel="icon" href="C:\Users\noalf\Desktop\HTML\fotos\logoIcono.ico" type="image/x-icon"/>
+
+    <title> CIELO EN PLATO </title>
+
+    <!-- Estilos generales-->
+    <link rel="stylesheet" href="C:\Users\noalf\Desktop\HTML\estilosGenerales.css" />
+
+    <!-- Grid  -->
+    <style>
+        .contenedor {
+            /* contenedor de cuadriculas */
+            display: grid;
+            /* 3 filas de tamaño automático y 1 de 1fr */
+            grid-template-rows: auto auto 1fr auto;
+            grid-template-columns: 1fr;
+            gap: 10px;
+            padding: 20px;
+            margin: auto;
+            box-shadow: 0 20px 20px #ffffff;
+            justify-content: center;
+            background: linear-gradient(to top, #EDEDED, #bdd2f7);
+        }
+
+        /* Elementos hijos del contenedor (el contenido de dentro del contenedor) */
+        .item {
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+
+    <!--- Estilos de listas-->
+    <style>
+        ul {
+            list-style-type: square;
+            background-color: #3A506B;
+            padding: 20px;
+            color: black;
+            list-style-position: inside;
+        }
+
+        ul li {
+            background-color: #FAF3E0;
+            padding: 10px;
+            color: black;
+
+        }
+
+        ol {
+            list-style-type: upper-roman;
+            background-color: #3A506B;
+            padding: 20px;
+            color: black;
+            list-style-position: inside;
+
+        }
+
+        ol li {
+            background-color: #FAF3E0;
+            padding: 10px;
+            color: black;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav class="navSuperior">
+        <!-- Icono con link a página principal -->
+        <a href="ÍNDICE.html">
+            <img class="imgPagInicio" src="C:\Users\noalf\Desktop\HTML\fotos\logoIcono.ico" alt="Página principal"> </a>
+
+        <a href="MENÚ.html">Menú</a>
+        <a href="C:\Users\noalf\Desktop\HTML\Contacto.html">Reservas</a>
+
+    </nav>
+
+    <header>
+        <h1> <b> CIELO EN PLATO </b> </h1>
+        <article>
+            <h2> Bienvenidos a nuestro restaurante gourmet </h2>
+            <p> En <i> CIELO EN PLATO </i>lugar donde encontrareis una <b>experiencia única
+                </b>de sabores através de nuestros platos de <b>gran elaboración
+                </b> con los mejores productos del mercado. </p>
+        </article>
+
+    </header>
+
+    <!--GRID -->
+    <div class="contenedor">
+        
+        <section class="item">
+            <h2> Nuestras instalaciones </h2>
+
+            <section style="text-align: center">
+                <img src="C:\Users\noalf\Desktop\HTML\fotos\foto restaurante.jpg" alt="foto restaurante" width="500"
+                    height="500">
+            </section>
+
+
+            <section class="item">
+                <!--- Lista de especialidades-->
+                <h2> Nuestras especialidades </h2>
+                <ul>
+                    <li> Cocina mediterránea </li>
+                    <li> Cocina francesa </li>
+                    <li> Cocina de autor </li>
+                    <li> Cocina creativa </li>
+                </ul>
+            </section>
+
+            <section class="item">
+                <!--- Lista de reservas-->
+                <h2> Reservas </h2>
+                <ol>
+                    <li> Vaya al apartado de reservas </li>
+                    <li> Introduzca sus datos de contacto </li>
+                    <li> Confirme la fecha y la hora </li>
+                </ol>
+
+                <p class="pseudoEleme"> HAGALE UN FAVOR A SU PALADAR! </p>
+
+            </section>
+
+            <footer> <b> UBICACIÓN Y CONTACTO </b> <br>
+                Calle cereales, 24, 28001, Madrid <br>
+                info@cieloenplatomadrid.com <br>
+                +34 91 563 07 73
+            </footer>
+        </section>
+</body>
+
+</html>

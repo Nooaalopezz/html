@@ -1,0 +1,13 @@
+table {
+    text-align: justify;
+    width: 100%;
+    border-spacing: 2cm;
+}
+
+th { text-align: center;
+    font-size: 22px;
+ 
+}
+
+.titulosColumnas {font-size:25px ;
+}

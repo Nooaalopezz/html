@@ -1,0 +1,88 @@
+/* títulos principales*/
+h1 {
+    font-family: Tahoma;
+    text-align: center;
+    color: #243447;
+    font-size: 60px;
+    margin-top: 7%;
+    margin: 5%;
+    text-shadow: 6px 6px 4px #EDEDED;
+    box-shadow: 2px 2px 4px #ffffff;
+}
+
+/* Subttítulos*/
+h2 {
+    color: #243447;
+    font-size: 30px;
+    font-family: Tahoma;
+}
+
+/* links parte superior*/
+.navSuperior {
+    text-align: left;
+    margin: 5%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Imágen del link que dirige a página principal */
+.imgPagInicio {
+    width: 7%;
+    height: 7%;
+}
+.imgPagInicio:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos navegador */
+nav {
+    text-align: center;
+    font-size: 22px;
+}
+
+body {
+    background: linear-gradient(to top , #EDEDED, #bdd2f7);
+    color: #4B4B6A;
+    font-family: Tahoma;
+    font-size: 18px;
+    margin: 3%;
+    text-align: center;
+}
+
+/* Estilos de los links */
+a {
+    color: #3A506B;
+    text-decoration: none;
+    margin-left: 8%;
+}
+
+/* Estilos de los links cuando el cursor se posiciona encima */
+a:hover{
+    color: #000000  ;
+    cursor: pointer;
+}
+
+
+/* Estilos de los links cuando recibe click/foco (por parte del tabulador) */
+a:focus{
+    outline: 2px solid #D1B055 ;
+}
+
+/*Añade estilo a la primera letra  */
+.pseudoEleme::first-letter{
+    font-size: 30px;
+}
+
+/* Añade contenido al final de lo seleccionado */
+.pseudoEleme::after{
+    content: "(contacte con nosotros)";
+    color: rgb(192, 35, 35);
+    font-size: 16px;
+}
+
+footer {
+    text-align: justify;
+    margin-top: 5%;
+}
+
+
